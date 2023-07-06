@@ -74,6 +74,7 @@ function changeWord(wordType){
 		newSentence[wordType] = sentence[wordType][sentence[wordType].indexOf(newSentence[wordType]) + 1];
 	}
 	paragraph.textContent = newSentence.join(" ");
+	textToSpeak = newSentence.join(" ");
 }
 //Default Text to Speech
 /* Variables
@@ -85,7 +86,6 @@ var textToSpeak = "John ran over the blue ball at the park";
 //get paragraph element
 var paragraph = document.querySelector('#tts-p');
 paragraph.textContent = textToSpeak;
-
 var speakButton = document.querySelector('#tts-btn');
 
 
